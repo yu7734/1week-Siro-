@@ -606,8 +606,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GenerateManager
   gameObjects:
-  - {fileID: 4068620135257506063, guid: 734caaacccea05c44ba2a7bfb240cce5, type: 3}
-  generateTime: 2
+  - {fileID: 170924, guid: 652f1b1c2ef586f45ac26a1ddffab296, type: 3}
+  - {fileID: 100000, guid: cba00f75539bc564fabb9136fccfac6c, type: 3}
+  - {fileID: 100000, guid: f9ec2f5b43ac0204199acdb66395048b, type: 3}
+  - {fileID: 100000, guid: 888ce82c0af2ab0499d39c93fb0f4ce4, type: 3}
+  - {fileID: 100000, guid: f99df1970d4b71441a320ce6acc52709, type: 3}
+  - {fileID: 689703387598504572, guid: 6a43ca4885280844bb009563bd7d1dcd, type: 3}
+  - {fileID: 4244544703068471477, guid: 3b5a28db09a60f0479da5f8cdf8d7039, type: 3}
+  - {fileID: 4667656744896307966, guid: 12ab7dfd39045c04a914a2ac9e59b02f, type: 3}
+  - {fileID: 6350738330080727634, guid: da98780e533fe794aa83fa27bbfddf57, type: 3}
+  - {fileID: 8217891378572228073, guid: 8ce846c7eebb84f4d92bc6bdcde36312, type: 3}
+  - {fileID: 1330407642057107587, guid: 63c76cfb42cea0e429cc31b49501da0e, type: 3}
+  - {fileID: 3769926552780399675, guid: 640b1c008119192418bb742524f946d6, type: 3}
+  - {fileID: 7564358235192646565, guid: 64feaa7b7b780fb4f92198f6fb2e1bdb, type: 3}
+  - {fileID: 2512168723448869432, guid: 9507ca9f6e3797a47a8af6ca90f12748, type: 3}
+  - {fileID: 2978727326851549960, guid: 325dfdd9dab0e8f478b599780abdbd57, type: 3}
+  generateTime: 0.4
   minGeneratePositionX: -5
   maxGeneratePositionX: 5
   minGeneratePositionY: -5
