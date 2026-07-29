@@ -6,6 +6,7 @@ public class PlayerManager : MonoBehaviour
     [SerializeField, Tooltip("プレイヤーの移動速度")] private float playerMoveSpeed;
     private CharacterController characterController;
     private PlayerInputScript playerInputScript;
+    [SerializeField] private GameManager gameManager;
     [Header("プレイヤーの移動範囲")]
     [SerializeField, Tooltip("横移動の最小")] private float minPlayerRangeX;
     [SerializeField, Tooltip("横移動の最大")] private float maxPlayerRangeX;
@@ -16,11 +17,6 @@ public class PlayerManager : MonoBehaviour
     {
         characterController = GetComponent<CharacterController>();
         playerInputScript = GetComponent<PlayerInputScript>();
-    }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
     }
 
     // Update is called once per frame
@@ -39,5 +35,13 @@ public class PlayerManager : MonoBehaviour
         currentPosition.x = Mathf.Clamp(currentPosition.x, minPlayerRangeX, maxPlayerRangeX);//X軸の移動範囲
         currentPosition.y = Mathf.Clamp(currentPosition.y, minPlayerRangeY, maxPlayerRangeY);//Y軸の移動範囲
         this.transform.position = currentPosition;//現在の位置をcurrentPositionにする
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Obstacle")
+        {
+            gameManager.GameOver();
+        }
     }
 }
