@@ -905,6 +905,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerManager
   playerMoveSpeed: 5
+  minPlayerRangeX: -3
+  maxPlayerRangeX: 3
+  minPlayerRangeY: -3
+  maxPlayerRangeY: 3
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
