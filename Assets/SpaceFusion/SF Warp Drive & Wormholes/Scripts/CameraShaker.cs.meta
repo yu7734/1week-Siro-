@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 3ad5e217805e2414183f599d25d7aa68
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 278752
+  packageName: SciFi Warp Drive & Wormhole Effect
+  packageVersion: 1.0.1
+  assetPath: Assets/SpaceFusion/SF Warp Drive & Wormholes/Scripts/CameraShaker.cs
+  uploadId: 741061

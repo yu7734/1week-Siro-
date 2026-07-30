@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 5d0bd48bf56f3bf40a9ec5e36557fda7
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 625f186215c104763be7675aa2d941aa, type: 3}
+AssetOrigin:
+  serializedVersion: 1
+  productId: 278752
+  packageName: SciFi Warp Drive & Wormhole Effect
+  packageVersion: 1.0.1
+  assetPath: Assets/SpaceFusion/SF Warp Drive & Wormholes/ShaderGraphs/SF Warp.shadergraph
+  uploadId: 741061

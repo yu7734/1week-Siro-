@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: dd53065c7013b45488a1410719a28d82
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 112000000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 278752
+  packageName: SciFi Warp Drive & Wormhole Effect
+  packageVersion: 1.0.1
+  assetPath: Assets/SpaceFusion/SF Warp Drive & Wormholes/Scenes/Warp Drive and Wormholes/LightingData.asset
+  uploadId: 741061
