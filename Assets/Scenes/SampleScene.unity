@@ -838,6 +838,7 @@ GameObject:
   m_Component:
   - component: {fileID: 720415573}
   - component: {fileID: 720415572}
+  - component: {fileID: 720415574}
   m_Layer: 0
   m_Name: GenerateManager
   m_TagString: Untagged
@@ -893,6 +894,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &720415574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 720415571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac02b61c9e136b04ead6e18ede4247d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GenerateRecoverItem
+  recoverItem: {fileID: 7975998872709633962, guid: b76de77e9e36a1c44b094c10711555eb, type: 3}
+  generateTime: 0.7
+  minGeneratePositionX: -3
+  maxGeneratePositionX: 3
+  minGeneratePositionY: -3
+  maxGeneratePositionY: 3
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -1365,7 +1384,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoistureGaugeManager
   gaugeImage: {fileID: 1306117582}
-  gaugeTime: 10
+  maxGaugeTime: 25
 --- !u!114 &1306117582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1794,6 +1813,7 @@ MonoBehaviour:
   maxPlayerRangeX: 3
   minPlayerRangeY: -3
   maxPlayerRangeY: 3
+  moistureGauge: {fileID: 1306117581}
 --- !u!1001 &1831331756
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1967,9 +1987,9 @@ SceneRoots:
   - {fileID: 330585546}
   - {fileID: 410087041}
   - {fileID: 832575519}
+  - {fileID: 1121025356}
   - {fileID: 1801021572}
   - {fileID: 720415573}
-  - {fileID: 1121025356}
   - {fileID: 1467642327}
   - {fileID: 1354445874}
   - {fileID: 1990491870}

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class MoistureGaugeManager : MonoBehaviour
 {
     [SerializeField] private Image gaugeImage;
-    [SerializeField] private float gaugeTime;
+    [SerializeField] private float maxGaugeTime;
     private float currentGauge;
     private float timer;
 
@@ -17,13 +17,16 @@ public class MoistureGaugeManager : MonoBehaviour
     void Start()
     {
         gaugeImage.fillAmount = 1;
-        currentGauge = gaugeTime;
+        currentGauge = maxGaugeTime;
     }
 
     // Update is called once per frame
     void Update()
     {
         currentGauge -= Time.deltaTime;
-        gaugeImage.fillAmount = currentGauge / gaugeTime;
+        gaugeImage.fillAmount = currentGauge / maxGaugeTime;//ゲージを減らす
     }
+
+    public float GetSetCurrentGauge { get { return currentGauge; } set { currentGauge = value; } }//現在のゲージ変数のアクセッサ
+    public float GetSetMaxGaugeTime { get { return maxGaugeTime; } set { maxGaugeTime = value; } }//最大時間変数のアクセッサ
 }

@@ -13,6 +13,8 @@ public class PlayerManager : MonoBehaviour
     [SerializeField, Tooltip("cˆÚ“®‚ÌÅ¬")] private float minPlayerRangeY;
     [SerializeField, Tooltip("cˆÚ“®‚ÌÅ‘å")] private float maxPlayerRangeY;
 
+    [SerializeField] private MoistureGaugeManager moistureGauge;
+
     private void Awake()
     {
         characterController = GetComponent<CharacterController>();
@@ -41,7 +43,12 @@ public class PlayerManager : MonoBehaviour
     {
         if (collision.gameObject.tag == "Obstacle")
         {
-            gameManager.GameOver();
+            gameManager.GameOver();//áŠQ•¨‚ÉG‚ê‚½‚çƒQ[ƒ€ƒI[ƒo[
+        }
+        else if (collision.gameObject.tag == "recovery")
+        {
+            Destroy(collision.gameObject);
+            moistureGauge.GetSetCurrentGauge += moistureGauge.GetSetMaxGaugeTime / 5;//‰ñ•œƒAƒCƒeƒ€‚ÉG‚ê‚½‚çƒQ[ƒW‚ğ‰ñ•œ
         }
     }
 }
