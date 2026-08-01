@@ -906,7 +906,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac02b61c9e136b04ead6e18ede4247d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GenerateRecoverItem
-  recoverItem: {fileID: 7975998872709633962, guid: b76de77e9e36a1c44b094c10711555eb, type: 3}
+  recoverItem: {fileID: 7716875708213688130, guid: f2c34cbb5cf22fb4eae52424c0104f22, type: 3}
   generateTime: 0.7
   minGeneratePositionX: -3
   maxGeneratePositionX: 3
