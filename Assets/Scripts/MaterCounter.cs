@@ -29,4 +29,6 @@ public class MaterCounter : MonoBehaviour
         materCount += Time.deltaTime;
         materText.text = materCount.ToString("F2") + "M";
     }
+
+    public float GetSetMaterCount { get { return materCount; } set { materCount = value; } }
 }
