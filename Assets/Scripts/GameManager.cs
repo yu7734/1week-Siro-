@@ -9,12 +9,6 @@ public class GameManager : MonoBehaviour
         gameOverText.SetActive(false);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void GameOver()
     {
         Time.timeScale = 0;

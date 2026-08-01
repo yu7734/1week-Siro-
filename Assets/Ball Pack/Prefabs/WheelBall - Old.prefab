@@ -131,6 +131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveObjects
   ObjectMoveSpeed: 8
+  destroyTransform: -6
 --- !u!135 &-4665275365111124756
 SphereCollider:
   m_ObjectHideFlags: 0
