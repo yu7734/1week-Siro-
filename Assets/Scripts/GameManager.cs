@@ -35,4 +35,9 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene("GameScene");
     }
+
+    public void QUIT()
+    {
+        SceneManager.LoadScene("TitleScene");
+    }
 }
