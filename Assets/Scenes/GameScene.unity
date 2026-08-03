@@ -1791,10 +1791,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoistureGaugeManager
   gaugeImage: {fileID: 1306117582}
-  maxGaugeTime: 25
+  maxGaugeTime: 30
   volume: {fileID: 832575518}
-  maxDepth: 5
-  minDepth: 1
+  maxDepth: 10
+  minDepth: 2
 --- !u!114 &1306117582
 MonoBehaviour:
   m_ObjectHideFlags: 0

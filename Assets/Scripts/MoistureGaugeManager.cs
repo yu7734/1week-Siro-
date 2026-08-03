@@ -16,6 +16,7 @@ public class MoistureGaugeManager : MonoBehaviour
     private DepthOfField depth;
     [SerializeField, Tooltip("ぼかしの最大数値")] private float maxDepth;
     [SerializeField, Tooltip("ぼかしの最小数値")] private float minDepth;
+    private float depthRate;
 
     private void Awake()
     {
@@ -33,16 +34,20 @@ public class MoistureGaugeManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(depth.focusDistance.value);
         MoistureGauge();
     }
 
     private void MoistureGauge()
     {
         currentGauge -= Time.deltaTime;//時間が経つにつれてゲージを減らす
-        gaugeImage.fillAmount = currentGauge / maxGaugeTime;//画像のゲージを減らす
-        depth.focusDistance.value = currentGauge / maxDepth;//ゲージによってぼかすようにする
+        depthRate = currentGauge / maxGaugeTime;//ゲージの割合
+        gaugeImage.fillAmount = depthRate;//画像のゲージを減らす
+        depth.focusDistance.value = Mathf.Lerp(maxDepth, minDepth, 1 - depthRate);//ゲージによってぼかすようにする
         if (depth.focusDistance.value < minDepth) depth.focusDistance.value = minDepth;//最小ぼかしまでとどめる
         else if (depth.focusDistance.value > maxDepth) depth.focusDistance.value = maxDepth;//最大ぼかしまでとどめる
+        if (currentGauge > maxGaugeTime) currentGauge = maxGaugeTime;
+        else if (currentGauge < 0) currentGauge = 0;
     }
 
     public float GetSetCurrentGauge { get { return currentGauge; } set { currentGauge = value; } }//現在のゲージ変数のアクセッサ

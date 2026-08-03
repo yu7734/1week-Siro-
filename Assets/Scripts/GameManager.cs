@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        Time.timeScale = 1;
         for (int i = 0; i < gameOverUIObjects.Length; ++i)
         {
             gameOverUIObjects[i].SetActive(false);
